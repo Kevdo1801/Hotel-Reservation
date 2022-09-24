@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -59,6 +59,14 @@ Partial Class Form1
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblTotalDue = New System.Windows.Forms.Label()
+        Me.lblHotelFees = New System.Windows.Forms.Label()
+        Me.lblTax = New System.Windows.Forms.Label()
+        Me.lblRoomCharges = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.lstSpecRates = New System.Windows.Forms.ListBox()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -72,14 +80,6 @@ Partial Class Form1
         Me.lblRoomsBooked = New System.Windows.Forms.Label()
         Me.lblTotalGuest = New System.Windows.Forms.Label()
         Me.lblTotalNights = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.lblRoomCharges = New System.Windows.Forms.Label()
-        Me.lblTax = New System.Windows.Forms.Label()
-        Me.lblHotelFees = New System.Windows.Forms.Label()
-        Me.lblTotalDue = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
@@ -132,7 +132,7 @@ Partial Class Form1
         Me.txtDblNights.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDblNights.Location = New System.Drawing.Point(329, 669)
         Me.txtDblNights.Name = "txtDblNights"
-        Me.txtDblNights.Size = New System.Drawing.Size(71, 27)
+        Me.txtDblNights.Size = New System.Drawing.Size(71, 23)
         Me.txtDblNights.TabIndex = 29
         '
         'txtDblRooms
@@ -141,7 +141,7 @@ Partial Class Form1
         Me.txtDblRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDblRooms.Location = New System.Drawing.Point(245, 669)
         Me.txtDblRooms.Name = "txtDblRooms"
-        Me.txtDblRooms.Size = New System.Drawing.Size(70, 27)
+        Me.txtDblRooms.Size = New System.Drawing.Size(70, 23)
         Me.txtDblRooms.TabIndex = 28
         '
         'txtQueenNights
@@ -150,7 +150,7 @@ Partial Class Form1
         Me.txtQueenNights.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtQueenNights.Location = New System.Drawing.Point(329, 425)
         Me.txtQueenNights.Name = "txtQueenNights"
-        Me.txtQueenNights.Size = New System.Drawing.Size(71, 27)
+        Me.txtQueenNights.Size = New System.Drawing.Size(71, 23)
         Me.txtQueenNights.TabIndex = 27
         '
         'txtQueenRooms
@@ -159,7 +159,7 @@ Partial Class Form1
         Me.txtQueenRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtQueenRooms.Location = New System.Drawing.Point(245, 425)
         Me.txtQueenRooms.Name = "txtQueenRooms"
-        Me.txtQueenRooms.Size = New System.Drawing.Size(70, 27)
+        Me.txtQueenRooms.Size = New System.Drawing.Size(70, 23)
         Me.txtQueenRooms.TabIndex = 26
         '
         'txtKingNights
@@ -168,7 +168,7 @@ Partial Class Form1
         Me.txtKingNights.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtKingNights.Location = New System.Drawing.Point(329, 167)
         Me.txtKingNights.Name = "txtKingNights"
-        Me.txtKingNights.Size = New System.Drawing.Size(71, 27)
+        Me.txtKingNights.Size = New System.Drawing.Size(71, 23)
         Me.txtKingNights.TabIndex = 25
         '
         'txtKingRooms
@@ -177,7 +177,7 @@ Partial Class Form1
         Me.txtKingRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtKingRooms.Location = New System.Drawing.Point(245, 167)
         Me.txtKingRooms.Name = "txtKingRooms"
-        Me.txtKingRooms.Size = New System.Drawing.Size(71, 27)
+        Me.txtKingRooms.Size = New System.Drawing.Size(71, 23)
         Me.txtKingRooms.TabIndex = 24
         '
         'GroupBox6
@@ -199,7 +199,7 @@ Partial Class Form1
         Me.radDblRegular.Location = New System.Drawing.Point(7, 83)
         Me.radDblRegular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.radDblRegular.Name = "radDblRegular"
-        Me.radDblRegular.Size = New System.Drawing.Size(111, 24)
+        Me.radDblRegular.Size = New System.Drawing.Size(88, 19)
         Me.radDblRegular.TabIndex = 1
         Me.radDblRegular.TabStop = True
         Me.radDblRegular.Text = "Regular rate"
@@ -211,7 +211,7 @@ Partial Class Form1
         Me.radDblMember.Location = New System.Drawing.Point(7, 40)
         Me.radDblMember.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.radDblMember.Name = "radDblMember"
-        Me.radDblMember.Size = New System.Drawing.Size(116, 24)
+        Me.radDblMember.Size = New System.Drawing.Size(93, 19)
         Me.radDblMember.TabIndex = 0
         Me.radDblMember.TabStop = True
         Me.radDblMember.Text = "Member rate"
@@ -222,7 +222,7 @@ Partial Class Form1
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(325, 646)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(55, 20)
+        Me.Label13.Size = New System.Drawing.Size(45, 15)
         Me.Label13.TabIndex = 20
         Me.Label13.Text = "Nights:"
         '
@@ -231,7 +231,7 @@ Partial Class Form1
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(241, 646)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(58, 20)
+        Me.Label12.Size = New System.Drawing.Size(47, 15)
         Me.Label12.TabIndex = 19
         Me.Label12.Text = "Rooms:"
         '
@@ -241,7 +241,7 @@ Partial Class Form1
         Me.chkDblBed.Location = New System.Drawing.Point(245, 593)
         Me.chkDblBed.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.chkDblBed.Name = "chkDblBed"
-        Me.chkDblBed.Size = New System.Drawing.Size(170, 24)
+        Me.chkDblBed.Size = New System.Drawing.Size(134, 19)
         Me.chkDblBed.TabIndex = 18
         Me.chkDblBed.Text = "Select 2 double beds"
         Me.chkDblBed.UseVisualStyleBackColor = True
@@ -265,7 +265,7 @@ Partial Class Form1
         Me.radQueenRegular.Location = New System.Drawing.Point(7, 90)
         Me.radQueenRegular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.radQueenRegular.Name = "radQueenRegular"
-        Me.radQueenRegular.Size = New System.Drawing.Size(111, 24)
+        Me.radQueenRegular.Size = New System.Drawing.Size(88, 19)
         Me.radQueenRegular.TabIndex = 1
         Me.radQueenRegular.TabStop = True
         Me.radQueenRegular.Text = "Regular rate"
@@ -277,7 +277,7 @@ Partial Class Form1
         Me.radQueenMember.Location = New System.Drawing.Point(7, 41)
         Me.radQueenMember.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.radQueenMember.Name = "radQueenMember"
-        Me.radQueenMember.Size = New System.Drawing.Size(116, 24)
+        Me.radQueenMember.Size = New System.Drawing.Size(93, 19)
         Me.radQueenMember.TabIndex = 0
         Me.radQueenMember.TabStop = True
         Me.radQueenMember.Text = "Member rate"
@@ -288,7 +288,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(325, 403)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(55, 20)
+        Me.Label9.Size = New System.Drawing.Size(45, 15)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "Nights:"
         '
@@ -297,7 +297,7 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(241, 403)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 20)
+        Me.Label8.Size = New System.Drawing.Size(47, 15)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Rooms:"
         '
@@ -307,7 +307,7 @@ Partial Class Form1
         Me.chkQueenBed.Location = New System.Drawing.Point(249, 347)
         Me.chkQueenBed.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.chkQueenBed.Name = "chkQueenBed"
-        Me.chkQueenBed.Size = New System.Drawing.Size(164, 24)
+        Me.chkQueenBed.Size = New System.Drawing.Size(130, 19)
         Me.chkQueenBed.TabIndex = 12
         Me.chkQueenBed.Text = "Select 2 queen beds"
         Me.chkQueenBed.UseVisualStyleBackColor = True
@@ -331,7 +331,7 @@ Partial Class Form1
         Me.radKingRegular.Location = New System.Drawing.Point(7, 91)
         Me.radKingRegular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.radKingRegular.Name = "radKingRegular"
-        Me.radKingRegular.Size = New System.Drawing.Size(111, 24)
+        Me.radKingRegular.Size = New System.Drawing.Size(88, 19)
         Me.radKingRegular.TabIndex = 1
         Me.radKingRegular.TabStop = True
         Me.radKingRegular.Text = "Regular rate"
@@ -343,7 +343,7 @@ Partial Class Form1
         Me.radKingMember.Location = New System.Drawing.Point(7, 39)
         Me.radKingMember.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.radKingMember.Name = "radKingMember"
-        Me.radKingMember.Size = New System.Drawing.Size(116, 24)
+        Me.radKingMember.Size = New System.Drawing.Size(93, 19)
         Me.radKingMember.TabIndex = 0
         Me.radKingMember.TabStop = True
         Me.radKingMember.Text = "Member rate"
@@ -354,7 +354,7 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(325, 144)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(55, 20)
+        Me.Label5.Size = New System.Drawing.Size(45, 15)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Nights:"
         '
@@ -363,7 +363,7 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(241, 144)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 20)
+        Me.Label4.Size = New System.Drawing.Size(47, 15)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Rooms:"
         '
@@ -373,7 +373,7 @@ Partial Class Form1
         Me.chkKingBed.Location = New System.Drawing.Point(253, 99)
         Me.chkKingBed.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.chkKingBed.Name = "chkKingBed"
-        Me.chkKingBed.Size = New System.Drawing.Size(173, 24)
+        Me.chkKingBed.Size = New System.Drawing.Size(138, 19)
         Me.chkKingBed.TabIndex = 6
         Me.chkKingBed.Text = "Select king bed room"
         Me.chkKingBed.UseVisualStyleBackColor = True
@@ -384,7 +384,7 @@ Partial Class Form1
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 19.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(237, 526)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(230, 45)
+        Me.Label3.Size = New System.Drawing.Size(181, 36)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "2 Double beds"
         '
@@ -394,7 +394,7 @@ Partial Class Form1
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 19.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(237, 283)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(222, 45)
+        Me.Label2.Size = New System.Drawing.Size(176, 36)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "2 Queen beds"
         '
@@ -404,7 +404,7 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 19.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(245, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(176, 45)
+        Me.Label1.Size = New System.Drawing.Size(138, 36)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "1 King bed"
         '
@@ -459,22 +459,22 @@ Partial Class Form1
         'lstChildren
         '
         Me.lstChildren.FormattingEnabled = True
-        Me.lstChildren.ItemHeight = 20
+        Me.lstChildren.ItemHeight = 15
         Me.lstChildren.Location = New System.Drawing.Point(115, 59)
         Me.lstChildren.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.lstChildren.Name = "lstChildren"
-        Me.lstChildren.Size = New System.Drawing.Size(76, 144)
+        Me.lstChildren.Size = New System.Drawing.Size(76, 139)
         Me.lstChildren.TabIndex = 3
         '
         'lstAdults
         '
         Me.lstAdults.FormattingEnabled = True
-        Me.lstAdults.ItemHeight = 20
+        Me.lstAdults.ItemHeight = 15
         Me.lstAdults.Location = New System.Drawing.Point(6, 59)
         Me.lstAdults.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.lstAdults.Name = "lstAdults"
         Me.lstAdults.ScrollAlwaysVisible = True
-        Me.lstAdults.Size = New System.Drawing.Size(78, 144)
+        Me.lstAdults.Size = New System.Drawing.Size(78, 139)
         Me.lstAdults.TabIndex = 2
         '
         'Label17
@@ -482,7 +482,7 @@ Partial Class Form1
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(111, 35)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(67, 20)
+        Me.Label17.Size = New System.Drawing.Size(55, 15)
         Me.Label17.TabIndex = 1
         Me.Label17.Text = "Children:"
         '
@@ -491,7 +491,7 @@ Partial Class Form1
         Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(2, 35)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(94, 20)
+        Me.Label16.Size = New System.Drawing.Size(75, 15)
         Me.Label16.TabIndex = 0
         Me.Label16.Text = "Adults (+18):"
         '
@@ -514,23 +514,91 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Charges"
         '
+        'lblTotalDue
+        '
+        Me.lblTotalDue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalDue.Location = New System.Drawing.Point(103, 123)
+        Me.lblTotalDue.Name = "lblTotalDue"
+        Me.lblTotalDue.Size = New System.Drawing.Size(78, 20)
+        Me.lblTotalDue.TabIndex = 7
+        '
+        'lblHotelFees
+        '
+        Me.lblHotelFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHotelFees.Location = New System.Drawing.Point(103, 92)
+        Me.lblHotelFees.Name = "lblHotelFees"
+        Me.lblHotelFees.Size = New System.Drawing.Size(78, 20)
+        Me.lblHotelFees.TabIndex = 6
+        '
+        'lblTax
+        '
+        Me.lblTax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTax.Location = New System.Drawing.Point(103, 62)
+        Me.lblTax.Name = "lblTax"
+        Me.lblTax.Size = New System.Drawing.Size(78, 20)
+        Me.lblTax.TabIndex = 5
+        '
+        'lblRoomCharges
+        '
+        Me.lblRoomCharges.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblRoomCharges.Location = New System.Drawing.Point(103, 28)
+        Me.lblRoomCharges.Name = "lblRoomCharges"
+        Me.lblRoomCharges.Size = New System.Drawing.Size(78, 20)
+        Me.lblRoomCharges.TabIndex = 4
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(7, 123)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(58, 15)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Total due:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(7, 92)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(63, 15)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Hotel fees:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(7, 62)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(27, 15)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Tax:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(7, 28)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(42, 15)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Room:"
+        '
         'Label18
         '
         Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(719, 241)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(96, 20)
+        Me.Label18.Size = New System.Drawing.Size(75, 15)
         Me.Label18.TabIndex = 3
         Me.Label18.Text = "Special rates:"
         '
         'lstSpecRates
         '
         Me.lstSpecRates.FormattingEnabled = True
-        Me.lstSpecRates.ItemHeight = 20
+        Me.lstSpecRates.ItemHeight = 15
         Me.lstSpecRates.Location = New System.Drawing.Point(720, 265)
         Me.lstSpecRates.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.lstSpecRates.Name = "lstSpecRates"
-        Me.lstSpecRates.Size = New System.Drawing.Size(194, 84)
+        Me.lstSpecRates.Size = New System.Drawing.Size(194, 79)
         Me.lstSpecRates.TabIndex = 4
         '
         'Label19
@@ -538,7 +606,7 @@ Partial Class Form1
         Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(725, 353)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(93, 20)
+        Me.Label19.Size = New System.Drawing.Size(75, 15)
         Me.Label19.TabIndex = 5
         Me.Label19.Text = "Promo code:"
         '
@@ -548,7 +616,7 @@ Partial Class Form1
         Me.txtPromoCode.Location = New System.Drawing.Point(729, 373)
         Me.txtPromoCode.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPromoCode.Name = "txtPromoCode"
-        Me.txtPromoCode.Size = New System.Drawing.Size(164, 27)
+        Me.txtPromoCode.Size = New System.Drawing.Size(164, 23)
         Me.txtPromoCode.TabIndex = 6
         '
         'btnCalculate
@@ -586,7 +654,7 @@ Partial Class Form1
         Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(730, 524)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(113, 20)
+        Me.Label20.Size = New System.Drawing.Size(90, 15)
         Me.Label20.TabIndex = 10
         Me.Label20.Text = "Rooms booked:"
         '
@@ -595,7 +663,7 @@ Partial Class Form1
         Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(730, 558)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(91, 20)
+        Me.Label21.Size = New System.Drawing.Size(72, 15)
         Me.Label21.TabIndex = 11
         Me.Label21.Text = "Total guests:"
         '
@@ -604,7 +672,7 @@ Partial Class Form1
         Me.Label22.AutoSize = True
         Me.Label22.Location = New System.Drawing.Point(730, 591)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(89, 20)
+        Me.Label22.Size = New System.Drawing.Size(71, 15)
         Me.Label22.TabIndex = 12
         Me.Label22.Text = "Total nights:"
         '
@@ -632,77 +700,9 @@ Partial Class Form1
         Me.lblTotalNights.Size = New System.Drawing.Size(61, 20)
         Me.lblTotalNights.TabIndex = 15
         '
-        'Label6
+        'frmMain
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 28)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 20)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Room:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 62)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(33, 20)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Tax:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(7, 92)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 20)
-        Me.Label10.TabIndex = 2
-        Me.Label10.Text = "Hotel fees:"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(7, 123)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(74, 20)
-        Me.Label11.TabIndex = 3
-        Me.Label11.Text = "Total due:"
-        '
-        'lblRoomCharges
-        '
-        Me.lblRoomCharges.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblRoomCharges.Location = New System.Drawing.Point(103, 28)
-        Me.lblRoomCharges.Name = "lblRoomCharges"
-        Me.lblRoomCharges.Size = New System.Drawing.Size(78, 20)
-        Me.lblRoomCharges.TabIndex = 4
-        '
-        'lblTax
-        '
-        Me.lblTax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTax.Location = New System.Drawing.Point(103, 62)
-        Me.lblTax.Name = "lblTax"
-        Me.lblTax.Size = New System.Drawing.Size(78, 20)
-        Me.lblTax.TabIndex = 5
-        '
-        'lblHotelFees
-        '
-        Me.lblHotelFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHotelFees.Location = New System.Drawing.Point(103, 92)
-        Me.lblHotelFees.Name = "lblHotelFees"
-        Me.lblHotelFees.Size = New System.Drawing.Size(78, 20)
-        Me.lblHotelFees.TabIndex = 6
-        '
-        'lblTotalDue
-        '
-        Me.lblTotalDue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalDue.Location = New System.Drawing.Point(103, 123)
-        Me.lblTotalDue.Name = "lblTotalDue"
-        Me.lblTotalDue.Size = New System.Drawing.Size(78, 20)
-        Me.lblTotalDue.TabIndex = 7
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(952, 785)
@@ -724,8 +724,8 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "frmMain"
+        Me.Text = "Hotel Reservation"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
