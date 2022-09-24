@@ -7,7 +7,7 @@ Option Infer Off
 Option Strict On
 
 Public Class frmMain
-    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
     End Sub
 End Class
