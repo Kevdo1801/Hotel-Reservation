@@ -36,5 +36,10 @@ Public Class frmMain
         Integer.TryParse(txtDblNights.Text, intDoubleNight)
         Integer.TryParse(lstChildren.SelectedItem.ToString, intChildren)
         Integer.TryParse(lstAdults.SelectedItem.ToString, intAdults)
+        intTotalNights = intKingNights + intQueenNights + intDoubleNight
+        intTotalGuests = intChildren + intAdults
+        intTotalRooms = intKingRooms + intQueenRooms + intDoubleRoom
+
+
     End Sub
 End Class
