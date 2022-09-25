@@ -8,6 +8,7 @@ Option Strict On
 
 Public Class frmMain
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        'Add our Constants in
         Const dblDBLMember As Double = 140
         Const dblDBLRegular As Double = 145
         Const dblKingMember As Double = 150
@@ -21,5 +22,9 @@ Public Class frmMain
         Const dblAAA As Double = 0.06
         Const dblCorporate As Double = 0.08
         Const dblGov As Double = 0.1
+
+        'Add our Variables in
+        Dim dblRoomsAsRequired As Double
+        Dim intQueenNights, intKingNights, intKingRooms, intQueenRooms, intDoubleNight, intDoubleRoom, intChildren, intAdults, intTotalRooms, intTotalGuests, intTotalNights As Integer
     End Sub
 End Class
