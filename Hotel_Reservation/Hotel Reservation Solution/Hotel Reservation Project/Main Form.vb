@@ -40,6 +40,49 @@ Public Class frmMain
         intTotalGuests = intChildren + intAdults
         intTotalRooms = intKingRooms + intQueenRooms + intDoubleRoom
 
+        'Add message box error
+        dblRoomsAsRequired = intTotalGuests / intMaxOccupancy
+        If intTotalRooms < dblRoomsAsRequired Then
+            MessageBox.Show("Sorry, you have reached the maximum allowed guests per room.", "Allowed capacity per room is 5 guests, please reserve additional rooms as needed.", MessageBoxIcon.Information)
+        Else
+            Dim dblTotalCharge As Double
+            Dim dblTaxAmt As Double
+            Dim dblFeeAmt As Double
+            Dim dblKingCharge As Double
+            Dim dblQueenCharge As Double
+            Dim dblDoubleCharge As Double
+            Dim dblSubRoomCharge As Double
+
+            'Start adding our code for our check boxes
+
+            If chkKingBed.Checked Then
+                If radKingMemberR.Checked Then
+                    dblKingCharge = intKingRooms * intKingNights * dblKingMember
+                Else
+                    dblKingCharge = intKingNights * intKingRooms * dblKingRegular
+                End If
+            End If
+
+            If chkQueenBed.Checked Then
+                If radQueenMemberR.Checked Then
+                    dblQueenCharge = intQueenNights * intQueenRooms * dblQueenMember
+                Else
+                    dblQueenCharge = intQueenNights * intQueenRooms * dblQueenRegular
+                End If
+            End If
+
+            If chkDblBed.Checked Then
+                If radDblMemberR.Checked Then
+                    dblDoubleCharge = intDoubleNight * intDoubleRoom * dblDBLMember
+                Else
+                    dblDoubleCharge = intDoubleRoom * intDoubleNight * dblDBLRegular
+                End If
+            End If
+
+            'Now add all the discounts for sub charge/rooms
+
+
+        End If
 
     End Sub
 End Class

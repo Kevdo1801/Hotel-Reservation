@@ -30,20 +30,20 @@ Partial Class frmMain
         Me.txtKingNights = New System.Windows.Forms.TextBox()
         Me.txtKingRooms = New System.Windows.Forms.TextBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.radDblRegular = New System.Windows.Forms.RadioButton()
-        Me.radDblMember = New System.Windows.Forms.RadioButton()
+        Me.radDblRegularR = New System.Windows.Forms.RadioButton()
+        Me.radDblMemberR = New System.Windows.Forms.RadioButton()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.chkDblBed = New System.Windows.Forms.CheckBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.radQueenRegular = New System.Windows.Forms.RadioButton()
-        Me.radQueenMember = New System.Windows.Forms.RadioButton()
+        Me.radQueenRegularR = New System.Windows.Forms.RadioButton()
+        Me.radQueenMemberR = New System.Windows.Forms.RadioButton()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.chkQueenBed = New System.Windows.Forms.CheckBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.radKingRegular = New System.Windows.Forms.RadioButton()
-        Me.radKingMember = New System.Windows.Forms.RadioButton()
+        Me.radKingRegularR = New System.Windows.Forms.RadioButton()
+        Me.radKingMemberR = New System.Windows.Forms.RadioButton()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.chkKingBed = New System.Windows.Forms.CheckBox()
@@ -182,8 +182,8 @@ Partial Class frmMain
         '
         'GroupBox6
         '
-        Me.GroupBox6.Controls.Add(Me.radDblRegular)
-        Me.GroupBox6.Controls.Add(Me.radDblMember)
+        Me.GroupBox6.Controls.Add(Me.radDblRegularR)
+        Me.GroupBox6.Controls.Add(Me.radDblMemberR)
         Me.GroupBox6.Location = New System.Drawing.Point(472, 575)
         Me.GroupBox6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox6.Name = "GroupBox6"
@@ -193,29 +193,29 @@ Partial Class frmMain
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Rate type"
         '
-        'radDblRegular
+        'radDblRegularR
         '
-        Me.radDblRegular.AutoSize = True
-        Me.radDblRegular.Location = New System.Drawing.Point(7, 83)
-        Me.radDblRegular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.radDblRegular.Name = "radDblRegular"
-        Me.radDblRegular.Size = New System.Drawing.Size(88, 19)
-        Me.radDblRegular.TabIndex = 1
-        Me.radDblRegular.TabStop = True
-        Me.radDblRegular.Text = "Regular rate"
-        Me.radDblRegular.UseVisualStyleBackColor = True
+        Me.radDblRegularR.AutoSize = True
+        Me.radDblRegularR.Location = New System.Drawing.Point(7, 83)
+        Me.radDblRegularR.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.radDblRegularR.Name = "radDblRegularR"
+        Me.radDblRegularR.Size = New System.Drawing.Size(88, 19)
+        Me.radDblRegularR.TabIndex = 1
+        Me.radDblRegularR.TabStop = True
+        Me.radDblRegularR.Text = "Regular rate"
+        Me.radDblRegularR.UseVisualStyleBackColor = True
         '
-        'radDblMember
+        'radDblMemberR
         '
-        Me.radDblMember.AutoSize = True
-        Me.radDblMember.Location = New System.Drawing.Point(7, 40)
-        Me.radDblMember.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.radDblMember.Name = "radDblMember"
-        Me.radDblMember.Size = New System.Drawing.Size(93, 19)
-        Me.radDblMember.TabIndex = 0
-        Me.radDblMember.TabStop = True
-        Me.radDblMember.Text = "Member rate"
-        Me.radDblMember.UseVisualStyleBackColor = True
+        Me.radDblMemberR.AutoSize = True
+        Me.radDblMemberR.Location = New System.Drawing.Point(7, 40)
+        Me.radDblMemberR.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.radDblMemberR.Name = "radDblMemberR"
+        Me.radDblMemberR.Size = New System.Drawing.Size(93, 19)
+        Me.radDblMemberR.TabIndex = 0
+        Me.radDblMemberR.TabStop = True
+        Me.radDblMemberR.Text = "Member rate"
+        Me.radDblMemberR.UseVisualStyleBackColor = True
         '
         'Label13
         '
@@ -248,8 +248,8 @@ Partial Class frmMain
         '
         'GroupBox5
         '
-        Me.GroupBox5.Controls.Add(Me.radQueenRegular)
-        Me.GroupBox5.Controls.Add(Me.radQueenMember)
+        Me.GroupBox5.Controls.Add(Me.radQueenRegularR)
+        Me.GroupBox5.Controls.Add(Me.radQueenMemberR)
         Me.GroupBox5.Location = New System.Drawing.Point(477, 327)
         Me.GroupBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox5.Name = "GroupBox5"
@@ -259,29 +259,29 @@ Partial Class frmMain
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Rate type"
         '
-        'radQueenRegular
+        'radQueenRegularR
         '
-        Me.radQueenRegular.AutoSize = True
-        Me.radQueenRegular.Location = New System.Drawing.Point(7, 90)
-        Me.radQueenRegular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.radQueenRegular.Name = "radQueenRegular"
-        Me.radQueenRegular.Size = New System.Drawing.Size(88, 19)
-        Me.radQueenRegular.TabIndex = 1
-        Me.radQueenRegular.TabStop = True
-        Me.radQueenRegular.Text = "Regular rate"
-        Me.radQueenRegular.UseVisualStyleBackColor = True
+        Me.radQueenRegularR.AutoSize = True
+        Me.radQueenRegularR.Location = New System.Drawing.Point(7, 90)
+        Me.radQueenRegularR.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.radQueenRegularR.Name = "radQueenRegularR"
+        Me.radQueenRegularR.Size = New System.Drawing.Size(88, 19)
+        Me.radQueenRegularR.TabIndex = 1
+        Me.radQueenRegularR.TabStop = True
+        Me.radQueenRegularR.Text = "Regular rate"
+        Me.radQueenRegularR.UseVisualStyleBackColor = True
         '
-        'radQueenMember
+        'radQueenMemberR
         '
-        Me.radQueenMember.AutoSize = True
-        Me.radQueenMember.Location = New System.Drawing.Point(7, 41)
-        Me.radQueenMember.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.radQueenMember.Name = "radQueenMember"
-        Me.radQueenMember.Size = New System.Drawing.Size(93, 19)
-        Me.radQueenMember.TabIndex = 0
-        Me.radQueenMember.TabStop = True
-        Me.radQueenMember.Text = "Member rate"
-        Me.radQueenMember.UseVisualStyleBackColor = True
+        Me.radQueenMemberR.AutoSize = True
+        Me.radQueenMemberR.Location = New System.Drawing.Point(7, 41)
+        Me.radQueenMemberR.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.radQueenMemberR.Name = "radQueenMemberR"
+        Me.radQueenMemberR.Size = New System.Drawing.Size(93, 19)
+        Me.radQueenMemberR.TabIndex = 0
+        Me.radQueenMemberR.TabStop = True
+        Me.radQueenMemberR.Text = "Member rate"
+        Me.radQueenMemberR.UseVisualStyleBackColor = True
         '
         'Label9
         '
@@ -314,8 +314,8 @@ Partial Class frmMain
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.radKingRegular)
-        Me.GroupBox4.Controls.Add(Me.radKingMember)
+        Me.GroupBox4.Controls.Add(Me.radKingRegularR)
+        Me.GroupBox4.Controls.Add(Me.radKingMemberR)
         Me.GroupBox4.Location = New System.Drawing.Point(478, 85)
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox4.Name = "GroupBox4"
@@ -325,29 +325,29 @@ Partial Class frmMain
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Rate type"
         '
-        'radKingRegular
+        'radKingRegularR
         '
-        Me.radKingRegular.AutoSize = True
-        Me.radKingRegular.Location = New System.Drawing.Point(7, 91)
-        Me.radKingRegular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.radKingRegular.Name = "radKingRegular"
-        Me.radKingRegular.Size = New System.Drawing.Size(88, 19)
-        Me.radKingRegular.TabIndex = 1
-        Me.radKingRegular.TabStop = True
-        Me.radKingRegular.Text = "Regular rate"
-        Me.radKingRegular.UseVisualStyleBackColor = True
+        Me.radKingRegularR.AutoSize = True
+        Me.radKingRegularR.Location = New System.Drawing.Point(7, 91)
+        Me.radKingRegularR.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.radKingRegularR.Name = "radKingRegularR"
+        Me.radKingRegularR.Size = New System.Drawing.Size(88, 19)
+        Me.radKingRegularR.TabIndex = 1
+        Me.radKingRegularR.TabStop = True
+        Me.radKingRegularR.Text = "Regular rate"
+        Me.radKingRegularR.UseVisualStyleBackColor = True
         '
-        'radKingMember
+        'radKingMemberR
         '
-        Me.radKingMember.AutoSize = True
-        Me.radKingMember.Location = New System.Drawing.Point(7, 39)
-        Me.radKingMember.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.radKingMember.Name = "radKingMember"
-        Me.radKingMember.Size = New System.Drawing.Size(93, 19)
-        Me.radKingMember.TabIndex = 0
-        Me.radKingMember.TabStop = True
-        Me.radKingMember.Text = "Member rate"
-        Me.radKingMember.UseVisualStyleBackColor = True
+        Me.radKingMemberR.AutoSize = True
+        Me.radKingMemberR.Location = New System.Drawing.Point(7, 39)
+        Me.radKingMemberR.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.radKingMemberR.Name = "radKingMemberR"
+        Me.radKingMemberR.Size = New System.Drawing.Size(93, 19)
+        Me.radKingMemberR.TabIndex = 0
+        Me.radKingMemberR.TabStop = True
+        Me.radKingMemberR.Text = "Member rate"
+        Me.radKingMemberR.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -748,20 +748,20 @@ Partial Class frmMain
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox6 As GroupBox
-    Friend WithEvents radDblRegular As RadioButton
-    Friend WithEvents radDblMember As RadioButton
+    Friend WithEvents radDblRegularR As RadioButton
+    Friend WithEvents radDblMemberR As RadioButton
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents chkDblBed As CheckBox
     Friend WithEvents GroupBox5 As GroupBox
-    Friend WithEvents radQueenRegular As RadioButton
-    Friend WithEvents radQueenMember As RadioButton
+    Friend WithEvents radQueenRegularR As RadioButton
+    Friend WithEvents radQueenMemberR As RadioButton
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents chkQueenBed As CheckBox
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents radKingRegular As RadioButton
-    Friend WithEvents radKingMember As RadioButton
+    Friend WithEvents radKingRegularR As RadioButton
+    Friend WithEvents radKingMemberR As RadioButton
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents chkKingBed As CheckBox
