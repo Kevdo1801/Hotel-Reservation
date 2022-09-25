@@ -26,5 +26,15 @@ Public Class frmMain
         'Add our Variables in
         Dim dblRoomsAsRequired As Double
         Dim intQueenNights, intKingNights, intKingRooms, intQueenRooms, intDoubleNight, intDoubleRoom, intChildren, intAdults, intTotalRooms, intTotalGuests, intTotalNights As Integer
+
+        'TryParse our variables to numbers 
+        Integer.TryParse(txtKingNights.Text, intKingNights)
+        Integer.TryParse(txtQueenNights.Text, intQueenNights)
+        Integer.TryParse(txtKingRooms.Text, intKingRooms)
+        Integer.TryParse(txtQueenRooms.Text, intQueenRooms)
+        Integer.TryParse(txtDblRooms.Text, intDoubleRoom)
+        Integer.TryParse(txtDblNights.Text, intDoubleNight)
+        Integer.TryParse(lstChildren.SelectedItem.ToString, intChildren)
+        Integer.TryParse(lstAdults.SelectedItem.ToString, intAdults)
     End Sub
 End Class
